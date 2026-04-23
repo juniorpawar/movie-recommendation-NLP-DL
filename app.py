@@ -12,7 +12,7 @@ if "view" not in st.session_state:
     st.session_state.view = "home"
 if "selected_imdb_id" not in st.session_state:
     st.session_state.selected_imdb_id = None
-
+ 
 qp_view = st.query_params.get("view")
 qp_id = st.query_params.get("id")
 if qp_view in ("home", "details", "chatbot"):
